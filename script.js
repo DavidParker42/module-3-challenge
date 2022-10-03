@@ -6,10 +6,10 @@ function generatePassword() {
   var specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '`', '~', '{', '[', '}', ']', ';', ':', '"', ',', '.', '/', '<', '>', '?'];
   possibleCharacters = [];
 // 
-numberofCharacters = prompt ('How many characters do you want in your password?');
+var numberOfCharacters = prompt ('How many characters do you want in your password?');
 if (numberOfCharacters < 8 || numberOfCharacters > 128) {
   return "please choose a valid number of characters.";
-} else if (isNaN(numberofCharacters)) {
+} else if (isNaN(numberOfCharacters)) {
   numberOfCharacters = alert ('Please enter a valid number');
 }
 
@@ -50,9 +50,11 @@ if (hasSpecial) {
     alert("Your password will not have special characters");
   }
 
-if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecial);
-return "Please select at least one character type";
-;
+if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecial){
+  return "Please select at least one character type";
+};
+
+
 
 if (hasLowercase) {
   possibleCharacters = possibleCharacters.concat(lowercaseCharacters);
