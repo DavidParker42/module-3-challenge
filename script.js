@@ -1,16 +1,16 @@
 // Assignment Code
-function generatePassword(){
+function generatePassword() {
   var numericalCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var uppercaseCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   var lowercaseCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '`', '~', '{', '[', '}', ']', ';', ':', '"', ',', '.', '/', '<', '>', '?'];
   possibleCharacters = [];
-
-numberofCharacters = prompt('How many characters do wou want in your password?');
+// 
+numberofCharacters = prompt ('How many characters do you want in your password?');
 if (numberOfCharacters < 8 || numberOfCharacters > 128) {
   return "please choose a valid number of characters.";
 } else if (isNaN(numberofCharacters)) {
-  numberOfCharacters = prompt('Please enter a valid number');
+  numberOfCharacters = alert ('Please enter a valid number');
 }
 
 else {
@@ -52,7 +52,7 @@ if (hasSpecial) {
 
 if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecial);
 return "Please select at least one character type";
-};
+;
 
 if (hasLowercase) {
   possibleCharacters = possibleCharacters.concat(lowercaseCharacters);
@@ -70,7 +70,9 @@ for (let i = 0; i < numberOfCharacters; i++) {
   finalPassword = finalPassword + possibleCharacters[rng];
 }
 return finalPassword;
-;
+}
+
+
 
 var generateBtn = document.querySelector("#generate");
 
