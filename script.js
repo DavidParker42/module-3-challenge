@@ -5,7 +5,7 @@ function generatePassword() {
   var lowercaseCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '`', '~', '{', '[', '}', ']', ';', ':', '"', ',', '.', '/', '<', '>', '?'];
   possibleCharacters = [];
-// 
+
 var numberOfCharacters = prompt ('How many characters do you want in your password?');
 if (numberOfCharacters < 8 || numberOfCharacters > 128) {
   return "please choose a valid number of characters.";
