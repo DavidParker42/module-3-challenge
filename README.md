@@ -1,6 +1,6 @@
  
-# Advanced CSS: Portfolio
-  Advanced CSS: Portfolio
+# JavaScript: Password Generator
+  JavaScript: Password Generator
   
   ## Table of Contents
   1. [Description](#description)
@@ -19,7 +19,7 @@ This is contains 3 files, HTML, CSS, and Javascript. This is to fix a password g
 
 
   ## Application Type
-  CSS HTML
+  JavaScript
 
   ## Github repository link
   https://github.com/DavidParker42/module-3-challenge
